@@ -1,0 +1,51 @@
+@tailwind base;
+
+body {
+    @apply text-gray-100 bg-base-dark leading-tight;
+}
+
+h1 {
+    @apply text-6xl text-accent font-extrabold;
+}
+
+h2 {
+    @apply text-4xl text-accent font-bold;
+}
+
+h3 {
+    @apply text-3xl text-accent font-medium;
+}
+
+h4 {
+    @apply text-2xl text-accent font-normal;
+}
+
+h5 {
+    @apply text-lg text-accent font-normal;
+}
+
+.highlight {
+    @apply font-black text-primary;
+}
+
+.nav-link {
+    @apply mb-2 mx-1 py-2 px-2 rounded transition duration-200 ease-in-out cursor-pointer;
+}
+
+.nav-link:hover {
+    @apply bg-nav text-white;
+}
+
+.active-link {
+    @apply bg-nav text-white font-bold;
+}
+
+@screen md {
+    .nav-link {
+        @apply mr-3 py-1 px-2 mb-0;
+    }
+}
+
+@tailwind components;
+
+@tailwind utilities;
