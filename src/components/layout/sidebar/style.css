@@ -1,0 +1,59 @@
+.sidebar {
+    @apply col-span-2 bg-light p-6 relative transition-all duration-1000 ;
+}
+.sidebar.minimized {
+    @apply col-span-1 transition-all duration-1000 ;
+}
+.collapse-border {
+    @apply absolute w-1 h-full right-0 top-0 bg-light hover:bg-primary-light transition-all duration-200 cursor-ew-resize;
+}
+
+.collapse-border span {
+    @apply absolute w-6 h-6 p-1 block rounded-full bg-primary top-1/4 right-0 cursor-pointer transform translate-x-2/4 opacity-0 transition-all duration-200;
+}
+.minimize {
+    @apply w-4 h-4 transition-all duration-200;
+}
+.minimize.rotate {
+    @apply transform rotate-180;
+}
+
+.collapse-border:hover span {
+    @apply opacity-100;
+}
+.sidebar.large {
+    @apply col-span-4 bg-white;
+}
+
+.sidebar-links {
+    @apply mt-12 flex flex-col list-none relative;
+}
+
+.sidebar-links li {
+    @apply mt-4 text-base font-medium leading-6 relative flex flex-row justify-items-start items-center cursor-pointer;
+}
+
+.sidebar-links li .img-container {
+    @apply relative z-10 opacity-80 transition-all duration-200;
+}
+
+.sidebar-links li span {
+    @apply ml-2 text-grey-dark relative z-10 hover:text-dark;
+}
+
+.sidebar-links li::before{
+    content: '';
+    @apply box-content w-full h-full rounded px-2 py-2 -top-2 -left-2 block absolute z-10 transition-all duration-200;
+}
+
+.sidebar-links li:hover .img-container{
+    @apply opacity-100;
+}
+
+.sidebar-links li:hover::before {
+    @apply bg-light-dark cursor-pointer;
+}
+
+.sidebar-links li:first-child {
+    @apply mt-0;
+}

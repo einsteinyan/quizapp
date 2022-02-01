@@ -1,0 +1,39 @@
+.profile-section {
+    @apply justify-self-end ml-auto mr-2;
+}
+
+.profile-icon {
+    @apply w-10 h-10 p-2 my-1 rounded-full  cursor-pointer relative;
+}
+
+.profile-icon::before {
+    content: '';
+    @apply w-full h-full absolute p-1 top-0 left-0 rounded-full bg-accent-light opacity-0 transition-all duration-200;
+}
+
+.profile-icon:hover::before {
+    @apply opacity-100;
+}
+
+.profile-icon span {
+    @apply relative block z-10 bg-primary h-full w-full rounded-full text-white text-xs font-semibold leading-6 text-center;
+}
+
+.profile-dropdown {
+    @apply transition-all duration-200 absolute bg-white p-2 top-10 -left-44 w-52 rounded shadow border border-solid border-light-dark transform;
+}
+
+.profile-dropdown.hide {
+    @apply opacity-0 translate-y-2 pointer-events-none;
+}
+
+.profile-dropdown.show {
+    @apply opacity-100;
+}
+
+.profile-dropdown li{
+    @apply transition-all duration-200 text-sm font-medium text-grey-dark py-1.5 px-3 mt-1 rounded hover:bg-accent-light hover:text-dark;
+}
+.profile-dropdown li:first-child{
+    @apply mt-0;
+}

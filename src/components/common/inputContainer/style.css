@@ -1,0 +1,27 @@
+.input-container {
+    @apply relative;
+}
+
+.input-container input{
+    @apply w-full h-14 border-2 border-light-dark border-solid rounded text-dark font-medium leading-tight pt-4 pb-0.5 px-3;
+}
+
+.input-container input:focus {
+    @apply ring-2 ring-accent outline-none;
+}
+
+.input-container input.error {
+    @apply border-secondary;
+}
+
+.input-container label.error {
+    @apply text-secondary-dark;
+}
+
+.input-container input.completed ~ label,
+.input-container input:focus ~ label {
+    @apply top-2 text-xs;
+}
+.input-container label {
+    @apply text-grey-dark text-sm absolute left-3.5 top-5 leading-4 transition-all duration-200;
+}

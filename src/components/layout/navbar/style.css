@@ -1,0 +1,3 @@
+.navbar {
+    @apply col-span-12 h-16 p-2 flex flex-row justify-items-start shadow;
+}

@@ -1,0 +1,24 @@
+.nav-links {
+    @apply ml-10 flex flex-row  items-center;
+}
+
+.nav-links li {
+    @apply ml-6 text-sm font-medium leading-6 relative;
+}
+
+.nav-links li span {
+    @apply text-grey-dark cursor-pointer hover:text-dark relative z-10;
+}
+
+.nav-links li::before{
+    content: '';
+    @apply box-content w-full h-full rounded px-3 py-1 -top-1 -left-3 block absolute z-10 transition-all duration-200;
+}
+
+.nav-links li:hover::before {
+    @apply bg-accent-light cursor-pointer;
+}
+
+.nav-links li:first-child {
+    @apply ml-0;
+}

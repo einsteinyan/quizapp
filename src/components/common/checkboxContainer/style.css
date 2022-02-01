@@ -1,0 +1,11 @@
+.checkbox-container {
+    @apply flex flex-row align-middle;
+}
+
+.checkbox-container input[type='checkbox']{
+    @apply appearance-none w-4 h-4 border-2 border-light-dark border-solid rounded; 
+}
+
+.checkbox-container label {
+    @apply leading-4 ml-2;
+}

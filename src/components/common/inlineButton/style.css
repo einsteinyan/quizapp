@@ -1,0 +1,16 @@
+p.inline-wrapper {
+    @apply relative inline-block;
+}
+p.inline-wrapper:before {
+    content: '';
+    @apply w-full h-full bg-accent-light absolute rounded opacity-0 transition-all duration-200 box-content py-1 px-2 -top-1 -left-2;
+}
+p.inline-wrapper span {
+    @apply relative cursor-pointer text-primary font-medium z-10 transition-all duration-200;
+}
+p.inline-wrapper:hover:before {
+    @apply opacity-100;
+}
+p.inline-wrapper:hover span {
+    @apply text-primary-dark;
+}

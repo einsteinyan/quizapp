@@ -1,0 +1,11 @@
+.modal-container {
+    @apply fixed h-full w-full bg-white bg-opacity-90 z-20;
+}
+
+.modal-container .inline-wrapper {
+    @apply fixed top-20 right-20;
+}
+
+.modal-container .modal-content {
+    @apply max-w-7xl mx-auto mt-20 text-center;
+}

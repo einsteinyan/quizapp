@@ -1,0 +1,9 @@
+.view-wrapper {
+    @apply grid grid-cols-12 gap-1 h-full w-full;
+}
+.view-wrapper.default {
+    grid-template-rows: 4rem auto;
+}
+.view-wrapper.auth {
+    @apply grid grid-cols-12 gap-1;
+}

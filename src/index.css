@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary;
+  }
+  h1 {
+    @apply text-5xl text-dark-light font-black leading-tight;
+  }
+  h2 {
+    @apply text-4xl text-dark font-extralight;
+  }
+  h3 {
+    @apply text-3xl text-dark-dark font-bold;
+  }
+  h4 {
+    @apply text-2xl text-dark-dark font-bold;
+  }
+  h5 {
+    @apply text-xl text-dark-dark font-bold;
+  }
+}
+
+@layer components {
+
+  /* CTA Styling */
+
+  .btn-primary {
+    @apply w-full h-12 bg-primary text-center text-light-light rounded font-medium shadow-primary-md transition-all duration-300;
+  }
+
+  .btn-primary:hover {
+    @apply shadow-primary-xl;
+  }
+
+  .btn-primary:active {
+    @apply shadow-primary-lg;
+  }
+
+  .btn-primary:focus {
+    @apply outline-none shadow-primary-lg;
+  }
+  
+  .app-container {
+    @apply w-full h-screen;
+  }
+  .dashboard {
+    @apply col-span-10;
+  }
+  .dashboard.small {
+    @apply col-span-8;
+  }
+  .img-container {
+    @apply flex justify-center;
+  }
+}
